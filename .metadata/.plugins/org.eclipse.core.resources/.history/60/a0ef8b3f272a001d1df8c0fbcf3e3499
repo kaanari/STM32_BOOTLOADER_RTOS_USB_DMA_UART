@@ -1,0 +1,29 @@
+/*
+ * bootloader.c
+ *
+ *  Created on: Sep 1, 2022
+ *      Author: kaanari
+ */
+
+
+void bootloader(void)
+{
+
+	printf("Bootloader is running...\r\n");
+
+	check_applications();
+
+}
+
+
+/* This function is used for checking if applications
+ * that resides in each sector of the memory exists */
+void check_applications()
+{
+	uint8_t app_num = 0;
+	uint32_t app_start_address = 0;
+	for(; app_num < NUMBER_OF_APP; app_num++)
+	{
+		FLASH_SECTOR_SIZE*(app_num+1);
+	}
+}

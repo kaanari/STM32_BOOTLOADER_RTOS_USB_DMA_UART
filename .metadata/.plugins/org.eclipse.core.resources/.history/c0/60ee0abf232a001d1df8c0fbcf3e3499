@@ -1,0 +1,29 @@
+/*
+ * bootloader.h
+ *
+ *  Created on: Sep 1, 2022
+ *      Author: kaanari
+ */
+
+#ifndef INC_BOOTLOADER_H_
+#define INC_BOOTLOADER_H_
+
+#define BOOTLOADER_ADDRESS 0x08000000
+#define APP1_ADDRESS BOOTLOADER_ADDRESS+FLASH_SECTOR_SIZE
+#define APP2_ADDRESS 0
+
+#define FLASH_SECTOR_SIZE 0x20000 /* 128 KB */
+#define FLASH_BANK_SIZE 0x20000
+
+typedef struct
+{
+	//uint32_t CRC_value;
+	uint32_t stack_addr;
+	application_t* func_p;
+};
+
+typedef void (application_t)(void);
+
+
+
+#endif /* INC_BOOTLOADER_H_ */

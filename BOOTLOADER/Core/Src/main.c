@@ -18,10 +18,11 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "bootloader.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "stdio.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -31,6 +32,11 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define UART_TX_BUFFER_LENGTH 66
+#define UART_RX_BUFFER_LENGTH 66
+
+
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -61,6 +67,30 @@ static void MX_CRC_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+volatile uint8_t UART_TX_finished = 1;
+uint8_t UART_TX_BUFFER[UART_TX_BUFFER_LENGTH];
+uint8_t UART_RX_BUFFER[UART_RX_BUFFER_LENGTH];
+
+int _write(int file, uint8_t *data, int len)
+{
+   while(!UART_TX_finished);
+   UART_TX_finished = 0;
+   memcpy(UART_TX_BUFFER, data, len);
+
+   HAL_StatusTypeDef status =
+	  HAL_UART_Transmit_DMA(&huart3, (uint8_t*)UART_TX_BUFFER, len);
+
+   // return # of bytes written - as best we can tell
+   return (status == HAL_OK ? len : 0);
+
+}
+
+void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
+{
+	UART_TX_finished = 1;
+	HAL_GPIO_TogglePin(GPIOB,LED_GREEN_Pin);
+}
 
 /* USER CODE END 0 */
 
@@ -96,7 +126,8 @@ int main(void)
   MX_USART3_UART_Init();
   MX_CRC_Init();
   /* USER CODE BEGIN 2 */
-
+  HAL_Delay(500);
+  bootloader();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -106,6 +137,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	printf("A\r\n");
+	HAL_Delay(2000);
   }
   /* USER CODE END 3 */
 }

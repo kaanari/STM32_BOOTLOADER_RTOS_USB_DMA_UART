@@ -263,3 +263,2023 @@ Finished building: default.size.stdout
  
 Finished building: RTOS_USBFS.list
  
+20:09:59 **** Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m7 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32h723zgtx.d" -MT"Core/Startup/startup_stm32h723zgtx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32h723zgtx.o" "../Core/Startup/startup_stm32h723zgtx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_hal_msp.d" -MT"Core/Src/stm32h7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_it.d" -MT"Core/Src/stm32h7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32h7xx.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32h7xx.d" -MT"Core/Src/system_stm32h7xx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32h7xx.o"
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:74:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   74 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/main.c:74:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  124 |   printf("Bootloader is running...");
+      |   ^~~~~~
+../Core/Src/main.c:124:3: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  34868	    124	   1964	  36956	   905c	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 
+20:10:19 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-size   BOOTLOADER.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34868	    124	   1964	  36956	   905c	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+20:11:01 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-size   BOOTLOADER.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34868	    124	   1964	  36956	   905c	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+20:19:27 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:74:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   74 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/main.c:74:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  124 |   printf("Bootloader is running...");
+      |   ^~~~~~
+../Core/Src/main.c:124:3: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  34868	    124	   1964	  36956	   905c	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 
+20:21:12 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:75:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   75 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/main.c:75:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   21 | #include "stdio.h"
+  +++ |+#include <string.h>
+   22 | 
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  34868	    124	   1964	  36956	   905c	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 
+20:26:16 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  31956	    124	   1892	  33972	   84b4	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 
+20:28:21 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  30252	    124	   1892	  32268	   7e0c	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 
+20:29:55 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:75:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   75 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/main.c:75:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   21 | #include "stdio.h"
+  +++ |+#include <string.h>
+   22 | 
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  33160	    124	   1964	  35248	   89b0	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 
+20:32:23 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-size   BOOTLOADER.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33160	    124	   1964	  35248	   89b0	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+20:33:44 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:75:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   75 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/main.c:75:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   21 | #include "stdio.h"
+  +++ |+#include <string.h>
+   22 | 
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  33160	    128	   1960	  35248	   89b0	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 
+20:35:15 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  33160	    128	   1960	  35248	   89b0	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 
+20:36:30 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  33160	    128	   1960	  35248	   89b0	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 
+20:42:21 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:74:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   74 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/main.c:74:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  124 |   printf("Bootloader is running...\r\n");
+      |   ^~~~~~
+../Core/Src/main.c:124:3: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_hal_msp.d" -MT"Core/Src/stm32h7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_it.d" -MT"Core/Src/stm32h7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32h7xx.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32h7xx.d" -MT"Core/Src/system_stm32h7xx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32h7xx.o"
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  37932	    128	   1960	  40020	   9c54	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 
+20:43:14 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-size   BOOTLOADER.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37932	    128	   1960	  40020	   9c54	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+20:45:01 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:74:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   74 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/main.c:74:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  124 |   printf("Bootloader is running...\r\n");
+      |   ^~~~~~
+../Core/Src/main.c:124:3: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  38028	    128	   1960	  40116	   9cb4	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 
+20:45:52 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:74:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   74 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/main.c:74:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  124 |   printf("Bootloader is running...\r\n");
+      |   ^~~~~~
+../Core/Src/main.c:124:3: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  38028	    128	   1960	  40116	   9cb4	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 
+20:47:07 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:74:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   74 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/main.c:74:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:125:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  125 |   printf("Bootloader is running...\r\n");
+      |   ^~~~~~
+../Core/Src/main.c:125:3: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  38036	    128	   1960	  40124	   9cbc	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 
+21:56:42 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/bootloader.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/bootloader.d" -MT"Core/Src/bootloader.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bootloader.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_hal_msp.d" -MT"Core/Src/stm32h7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_it.d" -MT"Core/Src/stm32h7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32h7xx.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32h7xx.d" -MT"Core/Src/system_stm32h7xx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32h7xx.o"
+../Core/Src/bootloader.c: In function 'bootloader':
+../Core/Src/bootloader.c:12:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   12 |  printf("Bootloader is running...\r\n");
+      |  ^~~~~~
+../Core/Src/bootloader.c:12:2: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/bootloader.c:1:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+  +++ |+#include <stdio.h>
+    1 | /*
+../Core/Src/bootloader.c:14:2: error: unknown type name 'uint8_t'
+   14 |  uint8_t status = check_applications();
+      |  ^~~~~~~
+../Core/Src/bootloader.c:14:19: warning: implicit declaration of function 'check_applications' [-Wimplicit-function-declaration]
+   14 |  uint8_t status = check_applications();
+      |                   ^~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c: At top level:
+../Core/Src/bootloader.c:22:1: error: unknown type name 'int8_t'
+   22 | int8_t check_applications()
+      | ^~~~~~
+../Core/Src/bootloader.c: In function 'check_applications':
+../Core/Src/bootloader.c:24:2: error: unknown type name 'uint8_t'
+   24 |  uint8_t status = 0;
+      |  ^~~~~~~
+../Core/Src/bootloader.c:25:2: error: unknown type name 'uint8_t'
+   25 |  uint8_t app_num = 0;
+      |  ^~~~~~~
+../Core/Src/bootloader.c:26:2: error: unknown type name 'uint32_t'
+   26 |  uint32_t* app_start_address = 0;
+      |  ^~~~~~~~
+../Core/Src/bootloader.c:27:18: error: 'NUMBER_OF_APP' undeclared (first use in this function)
+   27 |  for(; app_num < NUMBER_OF_APP; app_num++)
+      |                  ^~~~~~~~~~~~~
+../Core/Src/bootloader.c:27:18: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/bootloader.c:29:23: error: 'BOOTLOADER_ADDRESS' undeclared (first use in this function)
+   29 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
+      |                       ^~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c:29:44: error: 'FLASH_SECTOR_SIZE' undeclared (first use in this function)
+   29 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
+      |                                            ^~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c:30:28: error: 'APP_ADDRESS_SPACE_LOW' undeclared (first use in this function)
+   30 |   if(*app_start_address >= APP_ADDRESS_SPACE_LOW && *app_start_address <= APP_ADDRESS_SPACE_MAX){
+      |                            ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c:30:75: error: 'APP_ADDRESS_SPACE_MAX' undeclared (first use in this function)
+   30 |   if(*app_start_address >= APP_ADDRESS_SPACE_LOW && *app_start_address <= APP_ADDRESS_SPACE_MAX){
+      |                                                                           ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c:31:4: warning: incompatible implicit declaration of built-in function 'printf'
+   31 |    printf("APP%d is presented.\r\n", app_num+1);
+      |    ^~~~~~
+../Core/Src/bootloader.c:31:4: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/bootloader.c:34:4: warning: incompatible implicit declaration of built-in function 'printf'
+   34 |    printf("APP%d is NOT presented.\r\n", app_num+1);
+      |    ^~~~~~
+../Core/Src/bootloader.c:34:4: note: include '<stdio.h>' or provide a declaration of 'printf'
+make: *** [Core/Src/subdir.mk:37: Core/Src/bootloader.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:13: warning: "FLASH_SIZE" redefined
+   13 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:26: warning: "FLASH_SECTOR_SIZE" redefined
+   26 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:27: warning: "FLASH_BANK_SIZE" redefined
+   27 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:33:2: error: unknown type name 'application_t'
+   33 |  application_t* func_p;
+      |  ^~~~~~~~~~~~~
+../Core/Inc/bootloader.h:34:1: warning: unnamed struct/union that defines no instances
+   34 | };
+      | ^
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:78:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   78 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/main.c:78:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   21 | #include "bootloader.h"
+  +++ |+#include <string.h>
+   22 | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:129:3: warning: implicit declaration of function 'bootloader' [-Wimplicit-function-declaration]
+  129 |   bootloader();
+      |   ^~~~~~~~~~
+../Core/Src/main.c:139:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  139 |  printf("A\r\n");
+      |  ^~~~~~
+../Core/Src/main.c:139:2: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "bootloader.h"
+  +++ |+#include <stdio.h>
+   22 | 
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j11 all" terminated with exit code 2. Build might be incomplete.
+21:57:13 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/bootloader.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/bootloader.d" -MT"Core/Src/bootloader.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bootloader.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/bootloader.c: In function 'bootloader':
+../Core/Src/bootloader.c:12:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   12 |  printf("Bootloader is running...\r\n");
+      |  ^~~~~~
+../Core/Src/bootloader.c:12:2: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/bootloader.c:1:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+  +++ |+#include <stdio.h>
+    1 | /*
+../Core/Src/bootloader.c:14:2: error: unknown type name 'uint8_t'
+   14 |  uint8_t status = check_applications();
+      |  ^~~~~~~
+../Core/Src/bootloader.c:14:19: warning: implicit declaration of function 'check_applications' [-Wimplicit-function-declaration]
+   14 |  uint8_t status = check_applications();
+      |                   ^~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c: At top level:
+../Core/Src/bootloader.c:22:1: error: unknown type name 'int8_t'
+   22 | int8_t check_applications()
+      | ^~~~~~
+../Core/Src/bootloader.c: In function 'check_applications':
+../Core/Src/bootloader.c:24:2: error: unknown type name 'uint8_t'
+   24 |  uint8_t status = 0;
+      |  ^~~~~~~
+../Core/Src/bootloader.c:25:2: error: unknown type name 'uint8_t'
+   25 |  uint8_t app_num = 0;
+      |  ^~~~~~~
+../Core/Src/bootloader.c:26:2: error: unknown type name 'uint32_t'
+   26 |  uint32_t* app_start_address = 0;
+      |  ^~~~~~~~
+../Core/Src/bootloader.c:27:18: error: 'NUMBER_OF_APP' undeclared (first use in this function)
+   27 |  for(; app_num < NUMBER_OF_APP; app_num++)
+      |                  ^~~~~~~~~~~~~
+../Core/Src/bootloader.c:27:18: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/bootloader.c:29:23: error: 'BOOTLOADER_ADDRESS' undeclared (first use in this function)
+   29 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
+      |                       ^~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c:29:44: error: 'FLASH_SECTOR_SIZE' undeclared (first use in this function)
+   29 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
+      |                                            ^~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c:30:28: error: 'APP_ADDRESS_SPACE_LOW' undeclared (first use in this function)
+   30 |   if(*app_start_address >= APP_ADDRESS_SPACE_LOW && *app_start_address <= APP_ADDRESS_SPACE_MAX){
+      |                            ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c:30:75: error: 'APP_ADDRESS_SPACE_MAX' undeclared (first use in this function)
+   30 |   if(*app_start_address >= APP_ADDRESS_SPACE_LOW && *app_start_address <= APP_ADDRESS_SPACE_MAX){
+      |                                                                           ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c:31:4: warning: incompatible implicit declaration of built-in function 'printf'
+   31 |    printf("APP%d is presented.\r\n", app_num+1);
+      |    ^~~~~~
+../Core/Src/bootloader.c:31:4: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/bootloader.c:34:4: warning: incompatible implicit declaration of built-in function 'printf'
+   34 |    printf("APP%d is NOT presented.\r\n", app_num+1);
+      |    ^~~~~~
+../Core/Src/bootloader.c:34:4: note: include '<stdio.h>' or provide a declaration of 'printf'
+make: *** [Core/Src/subdir.mk:37: Core/Src/bootloader.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:13: warning: "FLASH_SIZE" redefined
+   13 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:26: warning: "FLASH_SECTOR_SIZE" redefined
+   26 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:27: warning: "FLASH_BANK_SIZE" redefined
+   27 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:37:1: warning: unnamed struct/union that defines no instances
+   37 | };
+      | ^
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:78:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   78 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/main.c:78:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   21 | #include "bootloader.h"
+  +++ |+#include <string.h>
+   22 | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:129:3: warning: implicit declaration of function 'bootloader' [-Wimplicit-function-declaration]
+  129 |   bootloader();
+      |   ^~~~~~~~~~
+../Core/Src/main.c:139:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  139 |  printf("A\r\n");
+      |  ^~~~~~
+../Core/Src/main.c:139:2: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "bootloader.h"
+  +++ |+#include <stdio.h>
+   22 | 
+"make -j11 all" terminated with exit code 2. Build might be incomplete.
+21:57:36 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/bootloader.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/bootloader.d" -MT"Core/Src/bootloader.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bootloader.o"
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:13: warning: "FLASH_SIZE" redefined
+   13 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:26: warning: "FLASH_SECTOR_SIZE" redefined
+   26 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:27: warning: "FLASH_BANK_SIZE" redefined
+   27 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:37:1: warning: unnamed struct/union that defines no instances
+   37 | };
+      | ^
+../Core/Src/bootloader.c: In function 'bootloader':
+../Core/Src/bootloader.c:13:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   13 |  printf("Bootloader is running...\r\n");
+      |  ^~~~~~
+../Core/Src/bootloader.c:13:2: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/bootloader.c:8:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    7 | #include "bootloader.h"
+  +++ |+#include <stdio.h>
+    8 | 
+../Core/Src/bootloader.c:15:19: warning: implicit declaration of function 'check_applications' [-Wimplicit-function-declaration]
+   15 |  uint8_t status = check_applications();
+      |                   ^~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c: At top level:
+../Core/Src/bootloader.c:23:8: error: conflicting types for 'check_applications'
+   23 | int8_t check_applications()
+      |        ^~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c:15:19: note: previous implicit declaration of 'check_applications' was here
+   15 |  uint8_t status = check_applications();
+      |                   ^~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c: In function 'check_applications':
+../Core/Src/bootloader.c:30:21: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   30 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
+      |                     ^
+../Core/Src/bootloader.c:32:4: warning: incompatible implicit declaration of built-in function 'printf'
+   32 |    printf("APP%d is presented.\r\n", app_num+1);
+      |    ^~~~~~
+../Core/Src/bootloader.c:32:4: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/bootloader.c:35:4: warning: incompatible implicit declaration of built-in function 'printf'
+   35 |    printf("APP%d is NOT presented.\r\n", app_num+1);
+      |    ^~~~~~
+../Core/Src/bootloader.c:35:4: note: include '<stdio.h>' or provide a declaration of 'printf'
+make: *** [Core/Src/subdir.mk:37: Core/Src/bootloader.o] Error 1
+"make -j11 all" terminated with exit code 2. Build might be incomplete.
+21:57:54 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/bootloader.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/bootloader.d" -MT"Core/Src/bootloader.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bootloader.o"
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:13: warning: "FLASH_SIZE" redefined
+   13 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:26: warning: "FLASH_SECTOR_SIZE" redefined
+   26 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:27: warning: "FLASH_BANK_SIZE" redefined
+   27 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:37:1: warning: unnamed struct/union that defines no instances
+   37 | };
+      | ^
+../Core/Src/bootloader.c: In function 'bootloader':
+../Core/Src/bootloader.c:13:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   13 |  printf("Bootloader is running...\r\n");
+      |  ^~~~~~
+../Core/Src/bootloader.c:13:2: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/bootloader.c:8:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    7 | #include "bootloader.h"
+  +++ |+#include <stdio.h>
+    8 | 
+../Core/Src/bootloader.c:15:19: warning: implicit declaration of function 'check_applications' [-Wimplicit-function-declaration]
+   15 |  uint8_t status = check_applications();
+      |                   ^~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c: At top level:
+../Core/Src/bootloader.c:23:9: error: conflicting types for 'check_applications'
+   23 | uint8_t check_applications()
+      |         ^~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c:15:19: note: previous implicit declaration of 'check_applications' was here
+   15 |  uint8_t status = check_applications();
+      |                   ^~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c: In function 'check_applications':
+../Core/Src/bootloader.c:30:21: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   30 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
+      |                     ^
+../Core/Src/bootloader.c:32:4: warning: incompatible implicit declaration of built-in function 'printf'
+   32 |    printf("APP%d is presented.\r\n", app_num+1);
+      |    ^~~~~~
+../Core/Src/bootloader.c:32:4: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/bootloader.c:35:4: warning: incompatible implicit declaration of built-in function 'printf'
+   35 |    printf("APP%d is NOT presented.\r\n", app_num+1);
+      |    ^~~~~~
+../Core/Src/bootloader.c:35:4: note: include '<stdio.h>' or provide a declaration of 'printf'
+make: *** [Core/Src/subdir.mk:37: Core/Src/bootloader.o] Error 1
+"make -j11 all" terminated with exit code 2. Build might be incomplete.
+21:59:04 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/bootloader.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/bootloader.d" -MT"Core/Src/bootloader.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bootloader.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:13: warning: "FLASH_SIZE" redefined
+   13 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:13: warning: "FLASH_SIZE" redefined
+   13 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:26: warning: "FLASH_SECTOR_SIZE" redefined
+   26 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:27: warning: "FLASH_BANK_SIZE" redefined
+   27 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:26: warning: "FLASH_SECTOR_SIZE" redefined
+   26 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:27: warning: "FLASH_BANK_SIZE" redefined
+   27 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:37:1: warning: unnamed struct/union that defines no instances
+   37 | };
+      | ^
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:37:1: warning: unnamed struct/union that defines no instances
+   37 | };
+      | ^
+../Core/Src/bootloader.c: In function 'bootloader':
+../Core/Src/bootloader.c:13:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   13 |  printf("Bootloader is running...\r\n");
+      |  ^~~~~~
+../Core/Src/bootloader.c:13:2: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/bootloader.c:8:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    7 | #include "bootloader.h"
+  +++ |+#include <stdio.h>
+    8 | 
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:78:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   78 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/bootloader.c: In function 'check_applications':
+../Core/Src/main.c:78:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/bootloader.c:30:21: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   30 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
+      |                     ^
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   21 | #include "bootloader.h"
+  +++ |+#include <string.h>
+   22 | 
+../Core/Src/bootloader.c:32:4: warning: incompatible implicit declaration of built-in function 'printf'
+   32 |    printf("APP%d is presented.\r\n", app_num+1);
+      |    ^~~~~~
+../Core/Src/bootloader.c:32:4: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/bootloader.c:35:4: warning: incompatible implicit declaration of built-in function 'printf'
+   35 |    printf("APP%d is NOT presented.\r\n", app_num+1);
+      |    ^~~~~~
+../Core/Src/bootloader.c:35:4: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:129:3: warning: implicit declaration of function 'bootloader' [-Wimplicit-function-declaration]
+  129 |   bootloader();
+      |   ^~~~~~~~~~
+../Core/Src/main.c:139:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  139 |  printf("A\r\n");
+      |  ^~~~~~
+../Core/Src/main.c:139:2: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "bootloader.h"
+  +++ |+#include <stdio.h>
+   22 | 
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  40028	    128	   1960	  42116	   a484	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 
+22:00:45 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/bootloader.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/bootloader.d" -MT"Core/Src/bootloader.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bootloader.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:14: warning: "FLASH_SIZE" redefined
+   14 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:14: warning: "FLASH_SIZE" redefined
+   14 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:27: warning: "FLASH_SECTOR_SIZE" redefined
+   27 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:28: warning: "FLASH_BANK_SIZE" redefined
+   28 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:38:1: warning: unnamed struct/union that defines no instances
+   38 | };
+      | ^
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:78:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   78 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+../Core/Src/main.c:78:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   21 | #include "bootloader.h"
+  +++ |+#include <string.h>
+   22 | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:27: warning: "FLASH_SECTOR_SIZE" redefined
+   27 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:28: warning: "FLASH_BANK_SIZE" redefined
+   28 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:38:1: warning: unnamed struct/union that defines no instances
+   38 | };
+      | ^
+../Core/Src/bootloader.c: In function 'check_applications':
+../Core/Src/bootloader.c:30:21: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   30 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
+      |                     ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:129:3: warning: implicit declaration of function 'bootloader' [-Wimplicit-function-declaration]
+  129 |   bootloader();
+      |   ^~~~~~~~~~
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  40028	    128	   1960	  42116	   a484	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 
+22:03:29 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-size   BOOTLOADER.elf 
+   text	   data	    bss	    dec	    hex	filename
+  40028	    128	   1960	  42116	   a484	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+22:05:31 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/bootloader.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/bootloader.d" -MT"Core/Src/bootloader.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bootloader.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:14: warning: "FLASH_SIZE" redefined
+   14 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:14: warning: "FLASH_SIZE" redefined
+   14 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:27: warning: "FLASH_SECTOR_SIZE" redefined
+   27 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:28: warning: "FLASH_BANK_SIZE" redefined
+   28 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:38:1: warning: unnamed struct/union that defines no instances
+   38 | };
+      | ^
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:79:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   79 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/main.c:79:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   21 | #include "bootloader.h"
+  +++ |+#include <string.h>
+   22 | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:27: warning: "FLASH_SECTOR_SIZE" redefined
+   27 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:28: warning: "FLASH_BANK_SIZE" redefined
+   28 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:38:1: warning: unnamed struct/union that defines no instances
+   38 | };
+      | ^
+../Core/Src/bootloader.c: In function 'check_applications':
+../Core/Src/bootloader.c:30:21: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   30 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
+      |                     ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'bootloader' [-Wimplicit-function-declaration]
+  130 |   bootloader();
+      |   ^~~~~~~~~~
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  40032	    128	   1960	  42120	   a488	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 
+22:25:53 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/bootloader.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/bootloader.d" -MT"Core/Src/bootloader.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bootloader.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:17: warning: "FLASH_SIZE" redefined
+   17 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:17: warning: "FLASH_SIZE" redefined
+   17 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:30: warning: "FLASH_SECTOR_SIZE" redefined
+   30 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:31: warning: "FLASH_BANK_SIZE" redefined
+   31 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:30: warning: "FLASH_SECTOR_SIZE" redefined
+   30 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:31: warning: "FLASH_BANK_SIZE" redefined
+   31 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:79:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   79 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/main.c:79:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   21 | #include "bootloader.h"
+  +++ |+#include <string.h>
+   22 | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'bootloader' [-Wimplicit-function-declaration]
+  130 |   bootloader();
+      |   ^~~~~~~~~~
+../Core/Src/bootloader.c: In function 'bootloader':
+../Core/Src/bootloader.c:22:18: warning: implicit declaration of function 'select_application_to_boot' [-Wimplicit-function-declaration]
+   22 |  int8_t result = select_application_to_boot(boot_information);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c: At top level:
+../Core/Src/bootloader.c:34:8: error: conflicting types for 'select_application_to_boot'
+   34 | int8_t select_application_to_boot(boot_information_t boot_information)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c:22:18: note: previous implicit declaration of 'select_application_to_boot' was here
+   22 |  int8_t result = select_application_to_boot(boot_information);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c: In function 'check_applications':
+../Core/Src/bootloader.c:62:21: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   62 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
+      |                     ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/bootloader.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j11 all" terminated with exit code 2. Build might be incomplete.
+22:26:15 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/bootloader.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/bootloader.d" -MT"Core/Src/bootloader.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bootloader.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:17: warning: "FLASH_SIZE" redefined
+   17 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:17: warning: "FLASH_SIZE" redefined
+   17 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:30: warning: "FLASH_SECTOR_SIZE" redefined
+   30 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:31: warning: "FLASH_BANK_SIZE" redefined
+   31 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:30: warning: "FLASH_SECTOR_SIZE" redefined
+   30 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:31: warning: "FLASH_BANK_SIZE" redefined
+   31 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+../Core/Src/bootloader.c: In function 'check_applications':
+../Core/Src/bootloader.c:62:21: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   62 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
+      |                     ^
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:79:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   79 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/main.c:79:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   21 | #include "bootloader.h"
+  +++ |+#include <string.h>
+   22 | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'bootloader' [-Wimplicit-function-declaration]
+  130 |   bootloader();
+      |   ^~~~~~~~~~
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  40260	    128	   1960	  42348	   a56c	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 
+22:44:46 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/bootloader.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/bootloader.d" -MT"Core/Src/bootloader.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bootloader.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:17: warning: "FLASH_SIZE" redefined
+   17 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:17: warning: "FLASH_SIZE" redefined
+   17 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:30: warning: "FLASH_SECTOR_SIZE" redefined
+   30 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:31: warning: "FLASH_BANK_SIZE" redefined
+   31 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:30: warning: "FLASH_SECTOR_SIZE" redefined
+   30 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:31: warning: "FLASH_BANK_SIZE" redefined
+   31 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:79:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   79 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/main.c:79:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   21 | #include "bootloader.h"
+  +++ |+#include <string.h>
+   22 | 
+../Core/Src/bootloader.c: In function 'bootloader':
+../Core/Src/bootloader.c:26:3: warning: implicit declaration of function 'load_app' [-Wimplicit-function-declaration]
+   26 |   load_app(result);
+      |   ^~~~~~~~
+../Core/Src/bootloader.c: At top level:
+../Core/Src/bootloader.c:34:6: warning: conflicting types for 'load_app'
+   34 | void load_app(int8_t app_num)
+      |      ^~~~~~~~
+../Core/Src/bootloader.c:26:3: note: previous implicit declaration of 'load_app' was here
+   26 |   load_app(result);
+      |   ^~~~~~~~
+../Core/Src/bootloader.c: In function 'load_app':
+../Core/Src/bootloader.c:41:2: error: conversion to non-scalar type requested
+   41 |  selected_application.func_p = (application_info_t)jump_PC_ptr;
+      |  ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c: In function 'check_applications':
+../Core/Src/bootloader.c:78:21: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   78 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
+      |                     ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'bootloader' [-Wimplicit-function-declaration]
+  130 |   bootloader();
+      |   ^~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/bootloader.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j11 all" terminated with exit code 2. Build might be incomplete.
+22:45:39 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/bootloader.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/bootloader.d" -MT"Core/Src/bootloader.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bootloader.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:17: warning: "FLASH_SIZE" redefined
+   17 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:30: warning: "FLASH_SECTOR_SIZE" redefined
+   30 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:31: warning: "FLASH_BANK_SIZE" redefined
+   31 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:17: warning: "FLASH_SIZE" redefined
+   17 | #define FLASH_SIZE 0x00100000
+      | 
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:79:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   79 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/main.c:79:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   21 | #include "bootloader.h"
+  +++ |+#include <string.h>
+   22 | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:30: warning: "FLASH_SECTOR_SIZE" redefined
+   30 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:31: warning: "FLASH_BANK_SIZE" redefined
+   31 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+../Core/Src/bootloader.c: In function 'load_app':
+../Core/Src/bootloader.c:41:2: error: conversion to non-scalar type requested
+   41 |  selected_application.func_p = (application_info_t)jump_PC_ptr;
+      |  ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c: In function 'check_applications':
+../Core/Src/bootloader.c:78:21: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   78 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
+      |                     ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'bootloader' [-Wimplicit-function-declaration]
+  130 |   bootloader();
+      |   ^~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/bootloader.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j11 all" terminated with exit code 2. Build might be incomplete.
+22:48:08 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/bootloader.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/bootloader.d" -MT"Core/Src/bootloader.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bootloader.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:17: warning: "FLASH_SIZE" redefined
+   17 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:30: warning: "FLASH_SECTOR_SIZE" redefined
+   30 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:31: warning: "FLASH_BANK_SIZE" redefined
+   31 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:17: warning: "FLASH_SIZE" redefined
+   17 | #define FLASH_SIZE 0x00100000
+      | 
+../Core/Src/bootloader.c: In function 'load_app':
+../Core/Src/bootloader.c:41:2: error: conversion to non-scalar type requested
+   41 |  selected_application.func_p = (application_info_t)jump_PC_ptr;
+      |  ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c:46:2: error: called object is not a function or function pointer
+   46 |  selected_application.func_p();
+      |  ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/bootloader.c: In function 'check_applications':
+../Core/Src/bootloader.c:78:21: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   78 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
+      |                     ^
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:30: warning: "FLASH_SECTOR_SIZE" redefined
+   30 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:31: warning: "FLASH_BANK_SIZE" redefined
+   31 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:79:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   79 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/main.c:79:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   21 | #include "bootloader.h"
+  +++ |+#include <string.h>
+   22 | 
+make: *** [Core/Src/subdir.mk:37: Core/Src/bootloader.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'bootloader' [-Wimplicit-function-declaration]
+  130 |   bootloader();
+      |   ^~~~~~~~~~
+"make -j11 all" terminated with exit code 2. Build might be incomplete.
+22:48:41 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/bootloader.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/bootloader.d" -MT"Core/Src/bootloader.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bootloader.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:17: warning: "FLASH_SIZE" redefined
+   17 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:17: warning: "FLASH_SIZE" redefined
+   17 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:30: warning: "FLASH_SECTOR_SIZE" redefined
+   30 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:30: warning: "FLASH_SECTOR_SIZE" redefined
+   30 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:31: warning: "FLASH_BANK_SIZE" redefined
+   31 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/bootloader.h:31: warning: "FLASH_BANK_SIZE" redefined
+   31 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+../Core/Src/bootloader.c: In function 'load_app':
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:79:4: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   79 |    memcpy(UART_TX_BUFFER, data, len);
+      |    ^~~~~~
+../Core/Src/main.c:79:4: warning: incompatible implicit declaration of built-in function 'memcpy'
+../Core/Src/bootloader.c:41:32: error: cast specifies function type
+   41 |  selected_application.func_p = (application_t)jump_PC_ptr;
+      |                                ^
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   21 | #include "bootloader.h"
+  +++ |+#include <string.h>
+   22 | 
+../Core/Src/bootloader.c: In function 'check_applications':
+../Core/Src/bootloader.c:78:21: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   78 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
+      |                     ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/bootloader.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:3: warning: implicit declaration of function 'bootloader' [-Wimplicit-function-declaration]
+  130 |   bootloader();
+      |   ^~~~~~~~~~
+"make -j11 all" terminated with exit code 2. Build might be incomplete.
+22:49:07 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/bootloader.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/bootloader.d" -MT"Core/Src/bootloader.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bootloader.o"
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:17: warning: "FLASH_SIZE" redefined
+   17 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:30: warning: "FLASH_SECTOR_SIZE" redefined
+   30 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:31: warning: "FLASH_BANK_SIZE" redefined
+   31 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+../Core/Src/bootloader.c: In function 'check_applications':
+../Core/Src/bootloader.c:78:21: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   78 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
+      |                     ^
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  40336	    128	   1960	  42424	   a5b8	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 

@@ -1,0 +1,66 @@
+22:49:07 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/bootloader.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/bootloader.d" -MT"Core/Src/bootloader.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bootloader.o"
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:17: warning: "FLASH_SIZE" redefined
+   17 | #define FLASH_SIZE 0x00100000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10807: note: this is the location of the previous definition
+10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:30: warning: "FLASH_SECTOR_SIZE" redefined
+   30 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10811: note: this is the location of the previous definition
+10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
+      | 
+In file included from ../Core/Src/bootloader.c:7:
+../Core/Inc/bootloader.h:31: warning: "FLASH_BANK_SIZE" redefined
+   31 | #define FLASH_BANK_SIZE 0x00020000
+      | 
+In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32h7xx_hal_conf.h:246,
+                 from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/bootloader.h:11,
+                 from ../Core/Src/bootloader.c:7:
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h:10810: note: this is the location of the previous definition
+10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
+      | 
+../Core/Src/bootloader.c: In function 'check_applications':
+../Core/Src/bootloader.c:78:21: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   78 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
+      |                     ^
+arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BOOTLOADER.elf
+ 
+arm-none-eabi-size   BOOTLOADER.elf 
+arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
+   text	   data	    bss	    dec	    hex	filename
+  40336	    128	   1960	  42424	   a5b8	BOOTLOADER.elf
+Finished building: default.size.stdout
+ 
+Finished building: BOOTLOADER.list
+ 
+
+22:49:09 Build Finished. 0 errors, 4 warnings. (took 1s.300ms)
+

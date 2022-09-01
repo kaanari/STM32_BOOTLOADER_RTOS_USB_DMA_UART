@@ -1,0 +1,18 @@
+/*
+ * bootloader.h
+ *
+ *  Created on: Sep 1, 2022
+ *      Author: kaanari
+ */
+
+#ifndef INC_BOOTLOADER_H_
+#define INC_BOOTLOADER_H_
+
+
+#define APP1_ADDRESS 0
+#define APP2_ADDRESS 0
+
+#define FLASH_SECTOR_SIZE 20000 /* 128 KB */
+#define FLASH_BANK_SIZE 20000
+
+#endif /* INC_BOOTLOADER_H_ */
