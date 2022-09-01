@@ -1,0 +1,25 @@
+/*
+ * file_operations.h
+ *
+ *  Created on: Sep 1, 2022
+ *      Author: kaanari
+ */
+
+#ifndef INC_FILE_OPERATIONS_H_
+#define INC_FILE_OPERATIONS_H_
+
+#include "stdint.h"
+#include "string.h"
+#include "stdio.h"
+
+FRESULT scan_files (char* path);
+
+FRESULT create_file (char *name);
+
+FRESULT remove_file (char *name);
+
+FRESULT create_dir (char *name);
+
+uint8_t find_filename_argument(char* command);
+
+#endif /* INC_FILE_OPERATIONS_H_ */

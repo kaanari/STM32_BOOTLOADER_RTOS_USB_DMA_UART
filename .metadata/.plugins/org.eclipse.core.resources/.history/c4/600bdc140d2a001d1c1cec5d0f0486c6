@@ -1,0 +1,30 @@
+/*
+ * file_operations.h
+ *
+ *  Created on: Sep 1, 2022
+ *      Author: kaanari
+ */
+
+#ifndef INC_FILE_OPERATIONS_H_
+#define INC_FILE_OPERATIONS_H_
+
+#include "main.h"
+#include "cmsis_os.h"
+#include "fatfs.h"
+#include "usb_host.h"
+
+FRESULT scan_files (char* path);
+
+FRESULT create_file (char *name);
+
+FRESULT remove_file (char *name);
+
+FRESULT create_dir (char *name);
+
+FRESULT write_file (char *filename, char* data, BYTE mode);
+
+FRESULT echo(char *arguments);
+
+int8_t find_filename_argument(char* command);
+
+#endif /* INC_FILE_OPERATIONS_H_ */

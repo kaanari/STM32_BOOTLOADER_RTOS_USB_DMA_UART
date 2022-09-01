@@ -1,0 +1,17 @@
+19:10:20 **** Incremental Build of configuration Debug for project RTOS_USBFS ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/file_operations.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../FATFS/Target -I../FATFS/App -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/file_operations.d" -MT"Core/Src/file_operations.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/file_operations.o"
+arm-none-eabi-gcc -o "RTOS_USBFS.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/RTOS_USBFS/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTOS_USBFS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RTOS_USBFS.elf
+ 
+arm-none-eabi-size   RTOS_USBFS.elf 
+arm-none-eabi-objdump -h -S  RTOS_USBFS.elf  > "RTOS_USBFS.list"
+   text	   data	    bss	    dec	    hex	filename
+ 114096	    160	  30536	 144792	  23598	RTOS_USBFS.elf
+Finished building: default.size.stdout
+ 
+Finished building: RTOS_USBFS.list
+ 
+
+19:10:23 Build Finished. 0 errors, 0 warnings. (took 2s.997ms)
+

@@ -1,0 +1,265 @@
+18:26:35 **** Incremental Build of configuration Debug for project RTOS_USBFS ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/file_operations.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../FATFS/Target -I../FATFS/App -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/file_operations.d" -MT"Core/Src/file_operations.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/file_operations.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../FATFS/Target -I../FATFS/App -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/file_operations.c: In function 'write_file':
+../Core/Src/file_operations.c:18:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   18 | {
+      | ^
+../Core/Src/file_operations.c:49:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   49 | {
+      | ^
+../Core/Src/file_operations.c:88:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   88 | {
+      | ^
+../Core/Src/file_operations.c:121:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  121 | {
+      | ^
+../Core/Src/file_operations.c:144:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  144 | {
+      | ^
+../Core/Src/file_operations.c:173:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  173 | FRESULT echo(char *arguments){
+      |                              ^
+../Core/Src/file_operations.c:220:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  220 | {
+      | ^
+In file included from ../Core/Src/file_operations.c:8:
+../Core/Inc/file_operations.h:24:9: error: old-style parameter declarations in prototyped function definition
+   24 | FRESULT write_file (char *filename, char* data, BYTE mode)
+      |         ^~~~~~~~~~
+../Core/Src/file_operations.c:241: error: expected '{' at end of input
+  241 | 
+      | 
+../Core/Src/main.c: In function 'write_file':
+../Core/Src/main.c:45:27: error: storage class specified for parameter 'Appli_state'
+   45 | extern ApplicationTypeDef Appli_state;
+      |                           ^~~~~~~~~~~
+../Core/Src/main.c:73:13: error: storage class specified for parameter 'MX_GPIO_Init'
+   73 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:74:13: error: storage class specified for parameter 'MX_USART3_UART_Init'
+   74 | static void MX_USART3_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:75:13: error: storage class specified for parameter 'MX_DMA_Init'
+   75 | static void MX_DMA_Init(void);
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:92:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   92 | {
+      | ^
+../Core/Src/main.c:114:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  114 | {
+      | ^
+../Core/Src/main.c:207:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  207 | {
+      | ^
+../Core/Src/main.c:267:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  267 | {
+      | ^
+../Core/Src/main.c:313:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  313 | {
+      | ^
+../Core/Src/main.c:334:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  334 | {
+      | ^
+../Core/Src/file_operations.c:241: warning: control reaches end of non-void function [-Wreturn-type]
+  241 | 
+      | 
+../Core/Src/main.c:423:1: error: parameter 'txDoneFlag' is initialized
+  423 | uint8_t txDoneFlag = 0;
+      | ^~~~~~~
+../Core/Src/main.c:425:15: error: storage class specified for parameter 'old_RX_buffer_position'
+  425 | static size_t old_RX_buffer_position = 0;
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:425:1: error: parameter 'old_RX_buffer_position' is initialized
+  425 | static size_t old_RX_buffer_position = 0;
+      | ^~~~~~
+../Core/Src/main.c:426:15: error: storage class specified for parameter 'current_RX_buffer_position'
+  426 | static size_t current_RX_buffer_position = 0;
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:426:1: error: parameter 'current_RX_buffer_position' is initialized
+  426 | static size_t current_RX_buffer_position = 0;
+      | ^~~~~~
+../Core/Src/main.c:431:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  431 | {
+      | ^
+../Core/Src/main.c:439:74: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  439 | void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size){
+      |                                                                          ^
+../Core/Src/main.c:536:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  536 | {
+      | ^
+../Core/Src/main.c:564:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  564 | {
+      | ^
+../Core/Src/main.c:582:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  582 | {
+      | ^
+../Core/Src/main.c:705:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  705 | {
+      | ^
+../Core/Src/main.c:720:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  720 | {
+      | ^
+../Core/Src/main.c:737:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  737 | {
+      | ^
+In file included from ../Core/Src/main.c:27:
+../Core/Inc/file_operations.h:24:9: error: old-style parameter declarations in prototyped function definition
+   24 | FRESULT write_file (char *filename, char* data, BYTE mode)
+      |         ^~~~~~~~~~
+../Core/Src/main.c:763: error: expected '{' at end of input
+../Core/Src/main.c:763: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [Core/Src/subdir.mk:43: Core/Src/file_operations.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j11 all" terminated with exit code 2. Build might be incomplete.
+18:27:01 **** Incremental Build of configuration Debug for project RTOS_USBFS ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/file_operations.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../FATFS/Target -I../FATFS/App -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/file_operations.d" -MT"Core/Src/file_operations.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/file_operations.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../FATFS/Target -I../FATFS/App -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'StartDefaultTask':
+../Core/Src/main.c:546:7: warning: unused variable 'count' [-Wunused-variable]
+  546 |   int count = 0;
+      |       ^~~~~
+../Core/Src/main.c: In function 'ConsoleTask_Start':
+../Core/Src/main.c:671:9: warning: implicit declaration of function 'scan_all_files'; did you mean 'scan_files'? [-Wimplicit-function-declaration]
+  671 |    fr = scan_all_files(buf);
+      |         ^~~~~~~~~~~~~~
+      |         scan_files
+../Core/Src/main.c:593:10: warning: variable 'fr' set but not used [-Wunused-but-set-variable]
+  593 |  FRESULT fr;
+      |          ^~
+arm-none-eabi-gcc -o "RTOS_USBFS.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/RTOS_USBFS/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTOS_USBFS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RTOS_USBFS.elf
+ 
+arm-none-eabi-size   RTOS_USBFS.elf 
+arm-none-eabi-objdump -h -S  RTOS_USBFS.elf  > "RTOS_USBFS.list"
+   text	   data	    bss	    dec	    hex	filename
+ 112740	    160	  30536	 143436	  2304c	RTOS_USBFS.elf
+Finished building: default.size.stdout
+ 
+Finished building: RTOS_USBFS.list
+ 
+18:45:23 **** Incremental Build of configuration Debug for project RTOS_USBFS ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/file_operations.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../FATFS/Target -I../FATFS/App -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/file_operations.d" -MT"Core/Src/file_operations.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/file_operations.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../FATFS/Target -I../FATFS/App -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/file_operations.c: In function 'read_file':
+../Core/Src/file_operations.c:176:31: error: 'USBHfno' undeclared (first use in this function)
+  176 |  fresult = f_stat (filename, &USBHfno);
+      |                               ^~~~~~~
+../Core/Src/file_operations.c:176:31: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'StartDefaultTask':
+../Core/Src/main.c:546:7: warning: unused variable 'count' [-Wunused-variable]
+  546 |   int count = 0;
+      |       ^~~~~
+../Core/Src/main.c: In function 'ConsoleTask_Start':
+../Core/Src/main.c:671:9: warning: implicit declaration of function 'scan_all_files'; did you mean 'scan_files'? [-Wimplicit-function-declaration]
+  671 |    fr = scan_all_files(buf);
+      |         ^~~~~~~~~~~~~~
+      |         scan_files
+../Core/Src/main.c:593:10: warning: variable 'fr' set but not used [-Wunused-but-set-variable]
+  593 |  FRESULT fr;
+      |          ^~
+make: *** [Core/Src/subdir.mk:43: Core/Src/file_operations.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j11 all" terminated with exit code 2. Build might be incomplete.
+18:46:00 **** Incremental Build of configuration Debug for project RTOS_USBFS ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/file_operations.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../FATFS/Target -I../FATFS/App -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/file_operations.d" -MT"Core/Src/file_operations.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/file_operations.o"
+arm-none-eabi-gcc -o "RTOS_USBFS.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/RTOS_USBFS/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTOS_USBFS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RTOS_USBFS.elf
+ 
+arm-none-eabi-size   RTOS_USBFS.elf 
+arm-none-eabi-objdump -h -S  RTOS_USBFS.elf  > "RTOS_USBFS.list"
+   text	   data	    bss	    dec	    hex	filename
+ 114068	    160	  30536	 144764	  2357c	RTOS_USBFS.elf
+Finished building: default.size.stdout
+ 
+Finished building: RTOS_USBFS.list
+ 
+18:47:26 **** Incremental Build of configuration Debug for project RTOS_USBFS ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/file_operations.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../FATFS/Target -I../FATFS/App -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/file_operations.d" -MT"Core/Src/file_operations.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/file_operations.o"
+arm-none-eabi-gcc -o "RTOS_USBFS.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/RTOS_USBFS/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTOS_USBFS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RTOS_USBFS.elf
+ 
+arm-none-eabi-size   RTOS_USBFS.elf 
+arm-none-eabi-objdump -h -S  RTOS_USBFS.elf  > "RTOS_USBFS.list"
+   text	   data	    bss	    dec	    hex	filename
+ 114084	    160	  30536	 144780	  2358c	RTOS_USBFS.elf
+Finished building: default.size.stdout
+ 
+Finished building: RTOS_USBFS.list
+ 
+18:49:06 **** Incremental Build of configuration Debug for project RTOS_USBFS ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/file_operations.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../FATFS/Target -I../FATFS/App -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/file_operations.d" -MT"Core/Src/file_operations.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/file_operations.o"
+arm-none-eabi-gcc -o "RTOS_USBFS.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/RTOS_USBFS/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTOS_USBFS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RTOS_USBFS.elf
+ 
+arm-none-eabi-size   RTOS_USBFS.elf 
+arm-none-eabi-objdump -h -S  RTOS_USBFS.elf  > "RTOS_USBFS.list"
+   text	   data	    bss	    dec	    hex	filename
+ 114080	    160	  30536	 144776	  23588	RTOS_USBFS.elf
+Finished building: default.size.stdout
+ 
+Finished building: RTOS_USBFS.list
+ 
+18:49:42 **** Incremental Build of configuration Debug for project RTOS_USBFS ****
+make -j11 all 
+arm-none-eabi-size   RTOS_USBFS.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 114080	    160	  30536	 144776	  23588	RTOS_USBFS.elf
+Finished building: default.size.stdout
+ 
+18:58:23 **** Incremental Build of configuration Debug for project RTOS_USBFS ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/file_operations.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../FATFS/Target -I../FATFS/App -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/file_operations.d" -MT"Core/Src/file_operations.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/file_operations.o"
+arm-none-eabi-gcc -o "RTOS_USBFS.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/RTOS_USBFS/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTOS_USBFS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RTOS_USBFS.elf
+ 
+arm-none-eabi-size   RTOS_USBFS.elf 
+arm-none-eabi-objdump -h -S  RTOS_USBFS.elf  > "RTOS_USBFS.list"
+   text	   data	    bss	    dec	    hex	filename
+ 114112	    160	  30536	 144808	  235a8	RTOS_USBFS.elf
+Finished building: default.size.stdout
+ 
+Finished building: RTOS_USBFS.list
+ 
+19:03:34 **** Incremental Build of configuration Debug for project RTOS_USBFS ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/file_operations.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../FATFS/Target -I../FATFS/App -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/file_operations.d" -MT"Core/Src/file_operations.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/file_operations.o"
+arm-none-eabi-gcc -o "RTOS_USBFS.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/RTOS_USBFS/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTOS_USBFS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RTOS_USBFS.elf
+ 
+arm-none-eabi-size   RTOS_USBFS.elf 
+arm-none-eabi-objdump -h -S  RTOS_USBFS.elf  > "RTOS_USBFS.list"
+   text	   data	    bss	    dec	    hex	filename
+ 114080	    160	  30536	 144776	  23588	RTOS_USBFS.elf
+Finished building: default.size.stdout
+ 
+Finished building: RTOS_USBFS.list
+ 
+19:07:29 **** Incremental Build of configuration Debug for project RTOS_USBFS ****
+make -j11 all 
+arm-none-eabi-size   RTOS_USBFS.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 114080	    160	  30536	 144776	  23588	RTOS_USBFS.elf
+Finished building: default.size.stdout
+ 
+19:10:20 **** Incremental Build of configuration Debug for project RTOS_USBFS ****
+make -j11 all 
+arm-none-eabi-gcc "../Core/Src/file_operations.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../FATFS/Target -I../FATFS/App -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/file_operations.d" -MT"Core/Src/file_operations.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/file_operations.o"
+arm-none-eabi-gcc -o "RTOS_USBFS.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/RTOS_USBFS/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTOS_USBFS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RTOS_USBFS.elf
+ 
+arm-none-eabi-size   RTOS_USBFS.elf 
+arm-none-eabi-objdump -h -S  RTOS_USBFS.elf  > "RTOS_USBFS.list"
+   text	   data	    bss	    dec	    hex	filename
+ 114096	    160	  30536	 144792	  23598	RTOS_USBFS.elf
+Finished building: default.size.stdout
+ 
+Finished building: RTOS_USBFS.list
+ 

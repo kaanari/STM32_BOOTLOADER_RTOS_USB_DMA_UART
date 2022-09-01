@@ -1,0 +1,8 @@
+../Core/Src/file_operations.c:17:9:scan_all_files	104	static
+../Core/Src/file_operations.c:48:9:create_file	24	static
+../Core/Src/file_operations.c:87:9:remove_file	24	static
+../Core/Src/file_operations.c:120:9:create_dir	24	static
+../Core/Src/file_operations.c:143:9:write_file	24	static
+../Core/Src/file_operations.c:173:9:read_file	24	static
+../Core/Src/file_operations.c:227:9:echo	40	static
+../Core/Src/file_operations.c:273:8:find_filename_argument	32	static

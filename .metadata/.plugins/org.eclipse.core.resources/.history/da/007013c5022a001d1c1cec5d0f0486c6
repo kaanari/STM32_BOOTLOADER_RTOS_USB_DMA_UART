@@ -1,0 +1,252 @@
+/*
+ * file_operations.c
+ *
+ *  Created on: Sep 1, 2022
+ *      Author: kaanari
+ */
+
+#include "file_operations.h"
+
+FILINFO fno;
+FRESULT fresult;
+
+UINT br, bw;  // File read/write count
+
+FRESULT scan_all_files (char* path)        /* Start node to be scanned (***also used as work area***) */
+{
+	DIR dir;
+	UINT i;
+
+    fresult = f_opendir(&dir, path);                       /* Open the directory */
+
+    if (fresult == FR_OK) {
+            for (;;) {
+            	fresult = f_readdir(&dir, &fno);                   /* Read a directory item */
+                if (fresult != FR_OK || fno.fname[0] == 0) break;  /* Break on error or end of dir */
+                if (fno.fattrib & AM_DIR) {                    /* It is a directory */
+                	if (!(strcmp ("SYSTEM~1", fno.fname))) continue;
+                	if (!(strcmp("System Volume Information", fno.fname))) continue;
+                	i = strlen(path);
+                    sprintf(&path[i], "/%s", fno.fname);
+                    printf("%s\r\n",path);
+                    fresult = scan_files(path);                    /* Enter the directory */
+                    if (fresult != FR_OK) break;
+                    path[i] = 0;
+                } else {                                       /* It is a file. */
+                	printf("%s/%s\r\n", path, fno.fname);
+                }
+            }
+            f_closedir(&dir);
+        }
+
+
+    return fresult;
+}
+
+FRESULT create_file (char *name)
+{
+
+	uint8_t filename_position = find_filename_argument(name);
+
+	if(!filename_position){
+		printf("Please enter a proper filename!\r\n");
+		return FR_INVALID_NAME;
+	}
+
+	name = name + filename_position;
+
+	fresult = f_stat (name, &fno);
+	if (fresult == FR_OK)
+	{
+		printf("File '%s' already exists!\r\n",name);
+	}
+	else
+	{
+		fresult = f_open(&USBHFile, name, FA_CREATE_ALWAYS|FA_READ|FA_WRITE);
+		if (fresult != FR_OK)
+		{
+			printf("Error(%d) when creating the file '%s'\r\n", fresult, name);
+		    return fresult;
+		}
+		else
+		{
+			printf("'%s' is created successfully\r\n",name);
+		}
+
+		fresult = f_close(&USBHFile);
+		if (fresult != FR_OK)
+		{
+			printf("Error(%d) when closing the file '%s'\r\n", fresult, name);
+		}
+	}
+    return fresult;
+}
+
+FRESULT remove_file (char *name)
+{
+	/**** check whether the file exists or not ****/
+
+	uint8_t filename_position = find_filename_argument(name);
+
+	if(!filename_position){
+		printf("Please enter a proper filename!\r\n");
+		return FR_INVALID_NAME;
+	}
+
+	name = name + filename_position;
+
+	fresult = f_stat (name, &fno);
+	if (fresult != FR_OK)
+	{
+		printf("File '%s' does not exists!\r\n", name);
+	}
+	else
+	{
+		fresult = f_unlink (name);
+		if (fresult == FR_OK)
+		{
+			printf("'%s' has been removed successfully.\r\n", name);
+		}
+		else
+		{
+			printf("Error(%d) when removing '%s'!\r\n",fresult, name);
+		}
+	}
+	return fresult;
+}
+
+FRESULT create_dir (char *name)
+{
+	uint8_t filename_position = find_filename_argument(name);
+
+	if(!filename_position){
+		printf("Please enter a proper filename!\r\n");
+		return FR_INVALID_NAME;
+	}
+
+	name = name + filename_position;
+
+    fresult = f_mkdir(name);
+    if (fresult == FR_OK)
+    {
+    	printf("'%s' has been created successfully.\r\n", name);
+    }
+    else
+    {
+    	printf("Error(%d) when creating directory '%s'\r\n", fresult,name);
+    }
+    return fresult;
+}
+
+FRESULT write_file (char *name)
+{
+	/**** check whether the file exists or not ****/
+	//fresult = f_stat (name, &USBHfno);
+	//if (fresult != FR_OK)
+	//{
+	//	char *buf = malloc(100*sizeof(char));
+	//	sprintf (buf, "ERROR!!! *%s* does not exists\n\n", name);
+	//	Send_Uart (buf);
+	//   free(buf);
+	//    return fresult;
+	//}
+
+	//else
+	//{
+	    /* Create a file with read write access and open it */
+
+	uint8_t argument_position = find_filename_argument(arguments);
+
+	if(!argument_position){
+		printf("Please enter a proper filename!\r\n");
+		return FR_INVALID_NAME;
+	}
+
+	arguments = arguments + argument_position;
+
+
+	char *data_field_start_ptr, *data_field_end_ptr, *file_name_ptr;
+
+	data_field_start_ptr = strstr(arguments, '"');
+	if(!data_field_start_ptr){
+		printf("Specify the text to be written in the file!\r\n");
+		return FR_INVALID_NAME;
+	}
+
+	data_field_end_ptr = strstr(data_field_start_ptr, '"');
+
+
+	if(!data_field_end_ptr){
+		printf("Specify the text to be written in the file!\r\n");
+		return FR_INVALID_NAME;
+	}
+	*data_field_end_ptr = '\0';
+
+	file_name_ptr = strstr(data_field_end_ptr+1, ">>");
+	if(!file_name_ptr){
+		printf("Specify the filename to be written in the file!\r\n");
+		return FR_INVALID_NAME;
+	}
+
+	uint8_t filename_position = find_filename_argument(file_name_ptr+2);
+
+	if(!filename_position){
+		printf("Specify the filename to be written in the file!\r\n");
+		return FR_INVALID_NAME;
+	}
+
+	file_name_ptr = file_name_ptr + filename_position;
+
+
+	fresult = f_open(&USBHFile, file_name_ptr, FA_OPEN_EXISTING | FA_WRITE);
+	    if (fresult != FR_OK)
+	    {
+	    	printf("Error(%d) when opening file '%s'.\r\n", fresult, file_name_ptr);
+	    }
+	    else
+	    {
+
+	    	fresult = f_write(&USBHFile, data_field_start_ptr, strlen(data_field_start_ptr), &bw);
+	    	if (fresult != FR_OK)
+	    	{
+		    	printf("Error(%d) when opening file '%s'.\r\n", fresult, file_name_ptr);
+	    	}
+
+	    	/* Close file */
+	    	fresult = f_close(&USBHFile);
+	    	if (fresult != FR_OK)
+	    	{
+		    	printf("Error(%d) when opening file '%s'.\r\n", fresult, file_name_ptr);
+	    	}
+	    	else
+	    	{
+	    		printf("File '%s' is written successfully.\r\n", file_name_ptr);
+	    	}
+	    }
+	    return fresult;
+	//}
+}
+
+uint8_t find_filename_argument(char* command)
+{
+	char* args_start = command;
+	uint8_t len = strlen(args_start);
+
+	uint8_t i = 0;
+
+	if(len == 0){
+		return 0;
+	}
+
+	for(i = 0; i <= len; i ++)
+	{
+		if(args_start[i] != ' ')
+		{
+			return i;
+			break;
+		}
+	}
+
+	return 0;
+}
+
