@@ -44,6 +44,7 @@ char buff[256];
 
 extern ApplicationTypeDef Appli_state;
 
+//const uint32_t __attribute__((__section__(".crc_checksum"))) CRC_val = 0x888A5BDE;
 
 
 /* USER CODE END PD */

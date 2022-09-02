@@ -89,7 +89,6 @@ int _write(int file, uint8_t *data, int len)
 void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
 {
 	UART_TX_finished = 1;
-	HAL_GPIO_TogglePin(GPIOB,LED_GREEN_Pin);
 }
 
 /* USER CODE END 0 */

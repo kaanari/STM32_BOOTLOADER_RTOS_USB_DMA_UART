@@ -1,9 +1,9 @@
-22:49:07 **** Incremental Build of configuration Debug for project BOOTLOADER ****
+04:02:22 **** Incremental Build of configuration Debug for project BOOTLOADER ****
 make -j11 all 
 arm-none-eabi-gcc "../Core/Src/bootloader.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H723xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/bootloader.d" -MT"Core/Src/bootloader.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bootloader.o"
 In file included from ../Core/Src/bootloader.c:7:
-../Core/Inc/bootloader.h:17: warning: "FLASH_SIZE" redefined
-   17 | #define FLASH_SIZE 0x00100000
+../Core/Inc/bootloader.h:19: warning: "FLASH_SIZE" redefined
+   19 | #define FLASH_SIZE 0x00100000
       | 
 In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
                  from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
@@ -17,8 +17,8 @@ In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:1
 10807 | #define FLASH_SIZE                           ((((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0xFFFFU)) ? 0x100000U : \
       | 
 In file included from ../Core/Src/bootloader.c:7:
-../Core/Inc/bootloader.h:30: warning: "FLASH_SECTOR_SIZE" redefined
-   30 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+../Core/Inc/bootloader.h:32: warning: "FLASH_SECTOR_SIZE" redefined
+   32 | #define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
       | 
 In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
                  from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
@@ -32,8 +32,8 @@ In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:1
 10811 | #define FLASH_SECTOR_SIZE                    0x00020000UL          /* 128 KB   */
       | 
 In file included from ../Core/Src/bootloader.c:7:
-../Core/Inc/bootloader.h:31: warning: "FLASH_BANK_SIZE" redefined
-   31 | #define FLASH_BANK_SIZE 0x00020000
+../Core/Inc/bootloader.h:33: warning: "FLASH_BANK_SIZE" redefined
+   33 | #define FLASH_BANK_SIZE 0x00020000
       | 
 In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:167,
                  from ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:29,
@@ -47,20 +47,37 @@ In file included from ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:1
 10810 | #define FLASH_BANK_SIZE                      FLASH_SIZE            /* 1 MB   */
       | 
 ../Core/Src/bootloader.c: In function 'check_applications':
-../Core/Src/bootloader.c:78:21: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
-   78 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
+../Core/Src/bootloader.c:106:21: warning: assignment to 'uint32_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  106 |   app_start_address = BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE*(app_num+1);
       |                     ^
+../Core/Src/bootloader.c:116:33: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  116 |    printf("Resulting CRC is '0x%X'\r\n",crc_result);
+      |                                ~^       ~~~~~~~~~~
+      |                                 |       |
+      |                                 |       uint32_t {aka long unsigned int}
+      |                                 unsigned int
+      |                                %lX
+../Core/Src/bootloader.c:119:32: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  119 |    printf("Expected CRC is '0x%X'\r\n",crc_expected);
+      |                               ~^       ~~~~~~~~~~~~
+      |                                |       |
+      |                                |       uint32_t {aka long unsigned int}
+      |                                unsigned int
+      |                               %lX
+../Core/Src/bootloader.c:99:10: warning: unused variable 'crc_len_in_byte' [-Wunused-variable]
+   99 |  uint8_t crc_len_in_byte = (uint8_t)(app_size_in_byte%32);
+      |          ^~~~~~~~~~~~~~~
 arm-none-eabi-gcc -o "BOOTLOADER.elf" @"objects.list"   -mcpu=cortex-m7 -T"/Users/kaanari/PlanS/BOOTLOADER/STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BOOTLOADER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: BOOTLOADER.elf
  
 arm-none-eabi-size   BOOTLOADER.elf 
 arm-none-eabi-objdump -h -S  BOOTLOADER.elf  > "BOOTLOADER.list"
    text	   data	    bss	    dec	    hex	filename
-  40336	    128	   1960	  42424	   a5b8	BOOTLOADER.elf
+  41272	    128	   1960	  43360	   a960	BOOTLOADER.elf
 Finished building: default.size.stdout
  
 Finished building: BOOTLOADER.list
  
 
-22:49:09 Build Finished. 0 errors, 4 warnings. (took 1s.300ms)
+04:02:24 Build Finished. 0 errors, 7 warnings. (took 1s.725ms)
 

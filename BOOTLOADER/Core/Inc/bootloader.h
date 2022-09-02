@@ -11,6 +11,8 @@
 #include "main.h"
 #include "stdio.h"
 
+extern CRC_HandleTypeDef hcrc;
+
 /*ERROR DEFINITIONS*/
 #define NO_AVAILABLE_APP -1
 
@@ -31,7 +33,7 @@
 #define FLASH_BANK_SIZE 0x00020000
 
 
-typedef void (application_t)(void);
+typedef void (*application_t)(void);
 
 typedef struct
 {
@@ -43,7 +45,7 @@ typedef struct
 {
 	//uint32_t CRC_value;
 	uint32_t stack_addr;
-	application_t* func_p;
+	application_t func_p;
 } application_info_t;
 
 int8_t select_application_to_boot(boot_information_t boot_information);
