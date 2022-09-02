@@ -9804,3 +9804,21 @@
 2022-09-02 00:23:11,500 [INFO] ApiDbMcu:505 - Load IP Config File for PDM2PCM
 2022-09-02 00:23:11,562 [INFO] OpenFileManager:327 - Restore cursor
 2022-09-02 00:23:47,546 [INFO] Gpio:272 - dependency for GPIO [DEBUG, RCC, USART3]
+2022-09-02 12:39:53,248 [INFO] MainUpdater:2768 - connection check result : 10
+2022-09-02 12:39:53,634 [INFO] McuFinderGlobals:57 - Set McuFinderConnectedMode to true
+2022-09-02 12:39:53,639 [INFO] MultiScanPanel:195 - Auto-refresh data requested => check proxy status ongoing
+2022-09-02 12:39:53,639 [INFO] FinderPluginLoader:92 - Searching for filters in installed packs
+2022-09-02 12:39:54,903 [INFO] LoadUrlFilesThread:177 - End of LoadServerUrlFiles without Thread
+2022-09-02 12:39:54,904 [INFO] DetailPanel:339 - Set advertising image to /Users/kaanari/STM32Cube/Repository//en.Subbrand-STUSB-w.png
+2022-09-02 12:39:55,279 [INFO] MultiScanPanel:778 - Auto Refresh Data is not needed
+2022-09-02 12:39:59,765 [INFO] McuFinderGlobals:57 - Set McuFinderConnectedMode to true
+2022-09-02 12:39:59,791 [INFO] ApiDb:443 - Save user favorites file /Users/kaanari/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2022-09-02 12:39:59,791 [INFO] ApiDb:447 - User favorites MCUs=[]
+2022-09-02 14:05:05,459 [INFO] Activator:177 - 
+
+
+2022-09-02 14:05:05,461 [INFO] Activator:178 - !SESSION log4j initialized
+2022-09-02 14:05:09,585 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2022-09-02 14:05:33,096 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-09-02 14:05:33,096 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-09-02 14:05:33,096 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.

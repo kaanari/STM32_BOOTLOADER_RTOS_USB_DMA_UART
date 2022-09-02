@@ -1,4 +1,4 @@
-../Core/Src/bootloader.c:10:6:bootloader	16	static
-../Core/Src/bootloader.c:40:6:load_app	40	static,ignoring_inline_asm
-../Core/Src/bootloader.c:66:8:select_application_to_boot	24	static
-../Core/Src/bootloader.c:86:20:check_applications	48	static
+../Core/Src/bootloader.c:11:6:bootloader	16	static
+../Core/Src/bootloader.c:45:6:load_app	40	static,ignoring_inline_asm
+../Core/Src/bootloader.c:71:8:select_application_to_boot	24	static
+../Core/Src/bootloader.c:91:20:check_applications	48	static

@@ -16,7 +16,7 @@ extern CRC_HandleTypeDef hcrc;
 /*ERROR DEFINITIONS*/
 #define NO_AVAILABLE_APP -1
 
-#define FLASH_SIZE 0x00100000
+//#define FLASH_SIZE 0x00100000
 
 #define BOOTLOADER_ADDRESS 0x08000000
 #define APP1_ADDRESS BOOTLOADER_ADDRESS + FLASH_SECTOR_SIZE
@@ -29,8 +29,25 @@ extern CRC_HandleTypeDef hcrc;
 
 #define NUMBER_OF_APP 7
 
-#define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
-#define FLASH_BANK_SIZE 0x00020000
+/* Test Defines*/
+//#define APP1
+//#define APP2
+
+
+//#define FLASH_SECTOR_SIZE 0x00020000 /* 128 KB */
+//#define FLASH_BANK_SIZE 0x00020000
+
+#ifdef APP1
+	#define APP1_CRC_VALUE 0xE1567C57 /* CORRECT APP1 CRC */
+#else
+	#define APP1_CRC_VALUE 0xE1567C52 /* WRONG APP CRC */
+#endif
+
+#ifdef APP2
+	#define APP2_CRC_VALUE 0xBD175054 /* CORRECT APP2 CRC */
+#else
+	#define APP2_CRC_VALUE 0xB9212387 /* WRONG APP2 CRC */
+#endif
 
 
 typedef void (*application_t)(void);
@@ -47,6 +64,8 @@ typedef struct
 	uint32_t stack_addr;
 	application_t func_p;
 } application_info_t;
+
+void bootloader(void);
 
 int8_t select_application_to_boot(boot_information_t boot_information);
 
